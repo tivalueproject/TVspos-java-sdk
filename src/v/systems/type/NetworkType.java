@@ -3,7 +3,7 @@ package v.systems.type;
 public enum NetworkType {
 
     Testnet('T'),
-    Mainnet('M');
+    Mainnet(';');
 
     private final byte networkByte;
 
