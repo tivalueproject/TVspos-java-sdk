@@ -46,8 +46,8 @@ Java library for V Systems
 1. For testnet chain:
 
     ```java
-    import v.systems.Blockchain;
-    import v.systems.type.NetworkType;
+    import tv.systems.Blockchain;
+    import tv.systems.type.NetworkType;
  
     Blockchain chain = new Blockchain(NetworkType.Testnet, "http://test.v.systems:9922");
     ```
@@ -55,8 +55,8 @@ Java library for V Systems
 2. For mainnet chain:
 
     ```java
-    import v.systems.Blockchain;
-    import v.systems.type.NetworkType;
+    import tv.systems.Blockchain;
+    import tv.systems.type.NetworkType;
  
     Blockchain chain = new Blockchain(NetworkType.Mainnet, "https://wallet.v.systems/api");
     ```
@@ -65,8 +65,8 @@ Java library for V Systems
 1. Create account by seed
 
     ```java
-    import v.systems.Account;
-    import v.systems.type.NetworkType;
+    import tv.systems.Account;
+    import tv.systems.type.NetworkType;
  
     Account acc = new Account(NetworkType.Testnet, "<your seed>", 0);
     ```
@@ -74,8 +74,8 @@ Java library for V Systems
 2. Create account by private key
 
     ```java
-    import v.systems.Account;
-    import v.systems.type.NetworkType;
+    import tv.systems.Account;
+    import tv.systems.type.NetworkType;
      
     Account acc = new Account(NetworkType.Testnet, "<base58 private key>");
     ```
@@ -83,8 +83,8 @@ Java library for V Systems
 3. Create account by public key
 
     ```java
-    import v.systems.Account;
-    import v.systems.type.NetworkType;
+    import tv.systems.Account;
+    import tv.systems.type.NetworkType;
      
     Account acc = new Account(NetworkType.Testnet, "<base58 public key>", null);
     ```
@@ -92,8 +92,8 @@ Java library for V Systems
 4. Create account by address
 
     ```java
-    import v.systems.Account;
-    import v.systems.type.NetworkType;
+    import tv.systems.Account;
+    import tv.systems.type.NetworkType;
      
     Account acc = new Account(NetworkType.Testnet, null, "<base58 address>");
     ```
