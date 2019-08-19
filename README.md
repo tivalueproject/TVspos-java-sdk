@@ -27,7 +27,7 @@ Java library for TV Systems
   2. clone this project
 
      ```bash
-     $ git clone https://github.com/virtualeconomy/java-v-sdk.git
+     $ git clone https://github.com/tivalueproject/TVspos-java-sdk.git
      ```
 
   3. import GSON jar to your project. You can download gson.jar from [Gson Release](https://github.com/google/gson/releases). If you are using Maven, you can add dependency looks like this:
