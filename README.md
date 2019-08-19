@@ -1,5 +1,5 @@
-# java-vsystems
-Java library for V Systems
+# java-tv-systems
+Java library for TV Systems
 
 ## Install
 
@@ -49,7 +49,7 @@ Java library for V Systems
     import tv.systems.Blockchain;
     import tv.systems.type.NetworkType;
  
-    Blockchain chain = new Blockchain(NetworkType.Testnet, "http://test.v.systems:9922");
+    Blockchain chain = new Blockchain(NetworkType.Testnet, "https://testwallet.t.top/api/");
     ```
 
 2. For mainnet chain:
@@ -58,7 +58,7 @@ Java library for V Systems
     import tv.systems.Blockchain;
     import tv.systems.type.NetworkType;
  
-    Blockchain chain = new Blockchain(NetworkType.Mainnet, "https://wallet.v.systems/api");
+    Blockchain chain = new Blockchain(NetworkType.Mainnet, "https://wallet.t.top/api/");
     ```
     
 ### Create address object
@@ -102,7 +102,7 @@ Java library for V Systems
 1. Send Payment transaction
 
     ```java
-    Long amount = 1 * Blockchain.V_UNITY;  // Send 1.0 V coin
+    Long amount = 1 * Blockchain.V_UNITY;  // Send 1.0 TV coin
     PaymentTransaction tx = TransactionFactory.buildPaymentTx("<recipient address>", amount);
     String txId = tx.getId(); // get Tx ID offline
     
@@ -116,7 +116,7 @@ Java library for V Systems
 2. Send Lease transaction
 
     ```java
-    Long amount = 1 * Blockchain.V_UNITY;  // Lease 1.0 V coin
+    Long amount = 1 * Blockchain.V_UNITY;  // Lease 1.0 TV coin
     LeaseTransaction tx = TransactionFactory.buildLeaseTx("<recipient address>", amount);
     String txId = tx.getId(); // get Tx ID offline
     
